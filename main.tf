@@ -1,5 +1,5 @@
 resource "aws_lb_target_group" "this" {
-  name        = "${local.stack}-${target_group_suffix}"
+  name        = "${local.stack}-${var.resource_name_suffix}"
   port        = var.port
   protocol    = var.protocol
   vpc_id      = var.vpc_id

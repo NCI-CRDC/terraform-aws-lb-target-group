@@ -26,11 +26,6 @@ variable "program" {
   }
 }
 
-variable "target_group_suffix" {
-  type        = string
-  description = "the suffix of the target group name following the stack name"
-}
-
 variable "port" {
   type        = number
   description = "port on which targets receive traffic, unless overridden when registering a specific target"
@@ -84,6 +79,11 @@ variable "health_check_unhealthy_threshold" {
 variable "protocol" {
   type    = string
   default = "HTTP"
+}
+
+variable "resource_name_suffix" {
+  type        = string
+  description = "the suffix of the target group name following the stack name"
 }
 
 variable "stickiness_cookie_duration" {
