@@ -45,10 +45,10 @@ No modules.
 | <a name="input_port"></a> [port](#input\_port) | port on which targets receive traffic, unless overridden when registering a specific target | `number` | n/a | yes |
 | <a name="input_program"></a> [program](#input\_program) | the program associated with the application | `string` | n/a | yes |
 | <a name="input_protocol"></a> [protocol](#input\_protocol) | n/a | `string` | `"HTTP"` | no |
+| <a name="input_resource_name_suffix"></a> [resource\_name\_suffix](#input\_resource\_name\_suffix) | the suffix of the target group name following the stack name | `string` | n/a | yes |
 | <a name="input_stickiness_cookie_duration"></a> [stickiness\_cookie\_duration](#input\_stickiness\_cookie\_duration) | The time period, in seconds, during which requests from a client should be routed to the same target. | `number` | `1800` | no |
 | <a name="input_stickiness_enabled"></a> [stickiness\_enabled](#input\_stickiness\_enabled) | Enable or disable stickiness | `bool` | `true` | no |
 | <a name="input_stickiness_type"></a> [stickiness\_type](#input\_stickiness\_type) | The type of sticky sessions. The only current possible values are lb\_cookie, app\_cookie for ALBs, and source\_ip for NLBs | `string` | `"lb_cookie"` | no |
-| <a name="input_target_group_suffix"></a> [target\_group\_suffix](#input\_target\_group\_suffix) | the suffix of the target group name following the stack name | `string` | n/a | yes |
 | <a name="input_target_type"></a> [target\_type](#input\_target\_type) | n/a | `string` | `"ip"` | no |
 | <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | id of the vpc the target group is deployed to | `string` | n/a | yes |
 
